@@ -1,0 +1,82 @@
+.missionmain{
+    display: flex;
+    margin-top: 4%;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/*.missioncards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid black;
+    margin-left: 0px;
+    justify-content: center;
+    padding: 5% 3%;
+} */
+
+/*.cards h4{
+    font-weight: 400;
+    text-align: center;
+}
+
+.cardsContainer{
+    display: flex;
+    flex: 1 1;
+} */
+
+
+.cardsContainer{
+    display: flex;
+    gap: 1rem;
+    flex: 1 1;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #a95454;
+    padding: 3% 1%;
+    border-radius: 40% 40% 0% 0%;
+}
+
+.missioncards{
+    display: flex;
+    flex:1 1;
+    gap: 20px;
+}
+
+
+.cardsContainer h4{
+    font-weight: 400;
+    text-align: center;
+
+}
+
+@media (max-width: 1000px) {
+    .missionmain{
+        margin-top: 20%;
+    }
+
+    .missionParent h1{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .missioncards {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1;
+        gap: 20px;
+    }
+    .missioncards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}

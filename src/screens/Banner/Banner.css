@@ -1,0 +1,177 @@
+.bannermain {
+    /* border: 1px solid black; */
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 2%;
+}
+
+.bannerparent {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+
+.banner2 {
+    position: relative;
+}
+
+.bgImg {
+    width: 100%;
+    min-width: 400px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.mainImg {
+    width: 100%;
+    min-width: 400px;
+    background-size: cover;
+    z-index: 1;
+    margin-left: -50px;
+    /* margin-top: -10px; */
+}
+
+.banner1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.banner3 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.banner1 h1 {
+    font-weight: 400;
+}
+
+.banner3 h1 {
+    font-weight: 400;
+}
+
+.mobile{
+    display: none;
+}
+
+.navhead{
+    padding-bottom: 60px;
+}
+
+@media (max-width: 1000px) {
+
+    .navhead1 h1{
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: 30px;
+    }
+
+      .bannerparent{
+        margin-right: 20px;
+        margin-left: 10px;
+      }
+
+    .bannermain {
+        /* border: 1px solid black; */
+        margin-right: 30px;
+        margin-left: 25Px;
+        margin-top: 4%;
+    }
+
+    .banner1mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner3mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .banner3mobile h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .banner1mobile h1{
+        font-size: 1.5rem;
+            font-weight: 500;
+    }
+
+    .bgImg {
+        width: 80%;
+        min-width: 290px;
+        background-size: cover;
+        /* position: absolute; */
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+
+    .mainImg {
+        width: 100%;
+        min-width: 290px;
+        background-size: cover;
+        z-index: 1;
+        margin-left: -25px;
+        margin-top: -10px;
+    }
+
+    .bannerparent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        /* Adjusted the gap for better spacing */
+        align-items: center;
+    }
+
+        .banner1mobile,
+        .banner3mobile {
+            width: 100%;
+        }
+
+    .mobile{
+        display: flex;
+        gap: 50px;
+        /* flex: 1 1; */
+        overflow-x: scroll;
+        width: 100%;
+    }
+
+    .mobile{
+        display: grid;
+        grid-template-columns: 100% 100%;
+    }
+
+/* 
+    .banner2 {
+        order: -1;
+    } */
+
+
+    .banner1,
+    .banner3 {
+        display: none;
+        order: 1;
+        /* Change order to 1 to make banner1 and banner3 appear below banner2 */
+        text-align: center;
+        width: 100%;
+        /* Center text in mobile layout */
+    }
+
+    /* .banner1 {
+        order: 2;
+    }
+
+    .banner3 {
+        order: 3;
+    } */
+}

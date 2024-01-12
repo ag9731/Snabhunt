@@ -1,0 +1,102 @@
+.decomain{
+    width: 100%;
+    margin-top: 6%;
+}
+
+.decleft{
+    width: 40%;
+    /* border: 1px solid black; */
+}
+
+.decright{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width:60%;
+    /* border: 1px solid black; */
+}
+
+.decparent{
+    display: flex;
+    gap: 20px;
+}
+
+.decleft{
+    display: flex;
+    flex-direction: column;
+    gap: 65%;
+    overflow: hidden;
+}
+
+
+.decimages img{
+    margin: 5px;
+    border-radius: 150px 150px 0px 0px;
+}
+
+.decleft h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.mobilebtn button{
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+    .mobilebtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desktopbtn{
+        display: none;
+    }
+
+    .mobilebtn button{
+        display:block;
+        padding: 15px 50px 15px 50px;
+        border: 0.7px solid #000;
+        cursor: pointer;
+        border-radius: 25px;
+        background-color: #f5f1ed;
+    }
+    .decparent{
+        display: flex;
+        flex-direction: column;
+    }
+    .decleft {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    .decright {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+        
+    .ofreesleftbtn p{
+        margin: 0;
+    }
+
+    .decimages{
+        display: flex;
+        width: 50%;
+    }
+
+        .decimages img {
+            margin: 3px;
+            width: 100px;
+            border-radius: 150px 150px 0px 0px;
+        }
+}
+
+

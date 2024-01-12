@@ -1,0 +1,143 @@
+.navmain{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    background-color: #F5F1ED;
+}
+
+.navlogo{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap:20%;
+    padding-top: 40px;
+}
+
+.nav2 h2{
+    margin-left: 50px;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.nav3{
+    display: flex;
+    gap: 20px;
+}
+
+.navmenu ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.navmenu ul a:hover {
+    color: blue;
+}
+
+.navmenu ul li{
+    list-style: none;
+}
+
+.navmenu ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobilenav{
+    display: none;
+}
+
+.navhead h1{
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .navmenu{
+        display: none;
+    }
+    .navlogo{
+        display: none;
+    }
+    .mobilenav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 65px;
+        padding-top: 20px;
+        padding-top: 10px;
+    }
+    .mnav3{
+        position: relative;
+    }
+
+    .menuicons{
+        position: absolute;
+        top: -7px;
+        right: 0;
+    }
+
+    /* .iconclose{
+        position: absolute;
+        right: 0; 
+        bottom: 5; 
+        top: 0; 
+    }
+
+    .iconopen{
+        position: absolute;
+        right: 0; 
+        bottom: 5; 
+        top: 0;
+    } */
+
+    .mnav1 p{
+        font-size: 0.8rem;
+    }
+    .mnav2 h2{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .navmenu.open {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* Add other styles for the open state */
+    }
+
+    .head{
+        text-decoration: underline;
+    }
+
+    .navmenu{
+        background-color: red;
+    }
+
+    .navmenu ul{
+        border: 1px solid black;
+        /* margin-left: 70px;   */
+        /* margin-right: 70px; */
+        margin-top: -10px;
+        gap: 25px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        border-radius: 200px 200px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position:absolute; 
+        width: 100%;
+        z-index: 1;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+}

@@ -1,0 +1,83 @@
+.funmain {
+    display: flex;
+    margin-top: 4%;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.funcardsContainer {
+    display: flex;
+    gap: 1rem;
+    /* flex: 1 1; */
+    flex: 0 1 calc(33.33% - 50px);
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #a95454;
+    padding: 3% 1%;
+    border-radius: 40% 40% 0% 0%;
+}
+
+.funcards {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+    gap: 20px;
+}
+
+.funleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+.funleft img{
+    width: 80%;
+}
+
+.funcardsContainer h4 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.funcardsParent{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.funleft button{
+    padding: 15px 50px 15px 50px;
+    border: 0.7px solid #000;
+    cursor:pointer;
+    border-radius: 25px;
+    background-color: #f5f1ed;
+}
+
+@media (max-width: 1000px) {
+    .funmain{
+        margin-top: 30%;
+    }
+    .funcardsParent{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .funcards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .funcards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .funleft{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    
+}
